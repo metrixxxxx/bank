@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7f6">
+    <meta
+      name="description"
+      content="A simple interactive banking account demo."
+    >
+    <title>Northstar Bank | Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="bank-app">
+      <header class="topbar">
+        <a class="brand" href="./" aria-label="Northstar Bank home">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span>northstar<span class="brand-light"> bank</span></span>
+        </a>
+        <span class="secure-note">
+          <svg viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M5.5 8V5.8a4.5 4.5 0 0 1 9 0V8m-9.8 0h10.6v8.5H4.7V8Z"></path>
+          </svg>
+          
+        </span>
+      </header>
+
+      <section class="login-layout" id="login-view">
+        <div class="welcome-panel">
+          <div class="eyebrow"><span class="status-dot"></span> BANKING, MADE HUMAN</div>
+          <h1>A clearer view<br>of your money.</h1>
+          <p>Simple, thoughtful banking that gives you more room to focus on what matters.</p>
+          <div class="welcome-art" aria-hidden="true">
+            <div class="art-orbit art-orbit-one"></div>
+            <div class="art-orbit art-orbit-two"></div>
+            <div class="art-card">
+              <span class="art-card-chip"></span>
+              <span class="art-card-number">•••• &nbsp; •••• &nbsp; •••• &nbsp; 2048</span>
+              <span class="art-card-name">NORTHSTAR EVERYDAY</span>
+              <span class="art-star">✳</span>
+            </div>
+            <span class="art-sparkle sparkle-one">✳</span>
+            <span class="art-sparkle sparkle-two">✦</span>
+          </div>
+          <div class="trust-note">
+            <span class="trust-icon" aria-hidden="true">✓</span>
+            <span><strong>A little more peace of mind.</strong><br>Bank with confidence. your safety is our priority</span>
+          </div>
+        </div>
+
+        <div class="form-panel">
+          <div class="form-heading">
+            <span class="mobile-brand-mark" aria-hidden="true">N</span>
+            <p class="form-kicker">WELCOME</p>
+            <h2>Sign in to your account</h2>
+            <p class="form-subtitle">Enter Your email account and password.</p>
+          </div>
+          <form class="login-form" id="login-form">
+            <label for="email">Email address</label>
+            <input
+              autocomplete="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+              type="email"
+            >
+            <div class="password-label">
+              <label for="password">Password</label>
+              <span>Demo only</span>
+            </div>
+            <input
+              autocomplete="current-password"
+              id="password"
+              name="password"
+              placeholder="Enter any password"
+              required
+              type="password"
+            >
+            <button class="primary-button" type="submit">
+              Continue <span aria-hidden="true">→</span>
+            </button>
+          </form>
+          <p class="demo-disclaimer">
+            
+          </p>
+        </div>
+      </section>
+
+      <section class="account-layout" id="account-view" hidden>
+        <div class="account-welcome">
+          <div>
+            <p class="form-kicker">YOUR NORTHSTAR</p>
+            <h1>Good to see you, <span id="account-name">there</span>.</h1>
+            <p class="account-intro">Here’s your account at a glance.</p>
+          </div>
+          <button class="sign-out-button" id="sign-out" type="button">Sign out</button>
+        </div>
+        <div class="account-card">
+          <div class="account-card-top">
+            <div>
+              <p class="account-label">EVERYDAY CHECKING</p>
+              <p class="account-number">Account ending in <strong>2048</strong></p>
+            </div>
+            <span class="account-icon" aria-hidden="true">✳</span>
+          </div>
+          <div class="balance-block">
+            <p>Available balance</p>
+            <h2>$0<span>.00</span></h2>
+            <span class="balance-caption">USD · Demo account</span>
+          </div>
+          <div class="account-card-bottom">
+            <span><span class="balance-dot"></span> Account is active</span>
+            <span>•••• 2048</span>
+          </div>
+        </div>
+        <div class="activity-card">
+          <div class="activity-title">
+            <div>
+              <h2>Recent activity</h2>
+              <p>Your latest account updates</p>
+            </div>
+            <span class="activity-count">0 transactions</span>
+          </div>
+          <div class="empty-activity">
+            <span class="empty-icon" aria-hidden="true">↗</span>
+            <strong>You’re all caught up</strong>
+            <p>When you make a transaction, it’ll show up here.</p>
+          </div>
+        </div>
+        <p class="account-disclaimer">
+          A sample account for demonstration only. No real funds or banking services are involved.
+        </p>
+      </section>
+
+      <footer class="page-footer">
+        <span>© 2026 Northstar Bank · Demo experience</span>
+        <span>Questions? We’re here to help.</span>
+      </footer>
+    </main>
+  </body>
+</html>
